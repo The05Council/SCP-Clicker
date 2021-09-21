@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SCP Clicker</title>
+	
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div class="sectionLeft">
+			<center>
+				<div class="scoreContainer">
+					<span id="score">0</span> money<br>
+					<span id="scorepersecond">0</span> money per second
+				</div>
+				<br>
+				<div class="clickerContainer">
+					<img src="images/scp-logo.png" height="256px" width="256px" onclick="game.addToScore(game.clickValue)">
+				</div>
+			</center>
+			
+			<div class="sectionFooter">
+				<h5>SCP Clicker</h5>
+				<button onclick="resetGame();">Reset Game</button>
+			</div>
+		</div>
+		
+		<div class="sectionRight" id="shopContainer">
+		</div>
+		
+		<script src="main.js"></script>
+	</body>
+</html>
